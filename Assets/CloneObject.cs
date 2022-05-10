@@ -6,6 +6,8 @@ public class CloneObject : MonoBehaviour
 {
     public GameObject objectToClone;
     //public GameObject clon;
+    public int grados;
+    public int clones;
 
     public void InstantiateObject()
     {
@@ -19,10 +21,10 @@ public class CloneObject : MonoBehaviour
         */
 
         GameObject clon;
-        for (int i = 0; i < 14; i++)
+        for (int i = 0; i < clones; i++)
         {           
             clon = Instantiate(objectToClone);
-            clon.transform.Rotate(0, 45 * i, 0);
+            clon.transform.Rotate(0, grados * i, 0);
             clon.transform.Translate(i, i, 0);
             
             Destroy(clon, 5f);

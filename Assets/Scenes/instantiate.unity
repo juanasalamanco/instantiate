@@ -638,6 +638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToClone: {fileID: 8549027978054000271, guid: c7314180660f69340880aac1597ae164,
     type: 3}
+  grados: 34
+  clones: 15
 --- !u!4 &1379282091
 Transform:
   m_ObjectHideFlags: 0
