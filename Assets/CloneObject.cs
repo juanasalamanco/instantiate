@@ -16,13 +16,16 @@ public class CloneObject : MonoBehaviour
             Instantiate(objectToClone);
             i++;
         }
-        */    
+        */
 
-        for(int i = 0; i < 13; i++)
-        {
-            GameObject clon;
+        GameObject clon;
+        for (int i = 0; i < 14; i++)
+        {           
             clon = Instantiate(objectToClone);
-            Destroy(clon, 1);
+            clon.transform.Rotate(0, 45 * i, 0);
+            clon.transform.Translate(i, i, 0);
+            
+            Destroy(clon, 5f);
         }
 
     }
